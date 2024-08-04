@@ -26,5 +26,9 @@ export variableName
 #Call a script in which the var will be called.
 ./dir_of_the_script_which_recovers_the_vars.sh
 ```
-
-
+Any operation should be included inside $(( ))
+Operation possibilities are +, -, *, / and %.
+Example:
+```
+$(((varA+varB+2)%varA))
+```
